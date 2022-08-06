@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_3302842_he8s4k4tf3b.css" >
+	<style>
+		div {
+			width: 500px;
+			height: 300px;
+			border: 1px solid #000;
+			margin: 200px auto;
+			background: url(image/风景.png) no-repeat;
+			position: relative;	
+			perspective: 1000px;
+		}
+		img {
+			width: 50%;
+			height: 100%;
+			position: absolute;
+		}
+		.door-l {
+			left: 0;
+			transition: all 1s;
+			transform-origin: left;
+		}
+		.door-r {
+			right: 0;
+			transition: all 1s;
+			transform-origin: right;
+		}
+		div:hover .door-l {
+			transform: rotateY(-120deg);
+		}
+		div:hover .door-r {
+			transform: rotateY(120deg);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img class="door-l" src="image/door-l.png"/>
+		<img class="door-r" src="image/door-r.png"/>
+	</div>
+</body>
+</html>
