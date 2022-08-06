@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="#" name="lianxi">
+		<fieldset>
+			<legend>这是一个小练习</legend>
+			用户名:<input type="text" name=""/> <br />
+			密 &nbsp;码:<input type="password" maxlenth="6"> <br />
+			性别:<input type="radio" name="sex">女 <input type="radio" name="sex" checked="checked">男 <br />
+			爱好:<input type="checkbox" name="hobby1" checked="checked"> 足球 <input type="checkbox" name="hobby"> 篮球 <input type="checkbox" name="hobby2"> 排球  <br />
+			按钮:<br />
+			<input type="button" value="普通按钮"><br />
+			<input type="submit" value="提交按钮"><br />
+			<input type="reset" value="重置按钮"/><br />
+			<input type="image" src="../css/image/按钮.png" value="图像按钮"><br />
+			<input type="file" value="文件按钮"><br />
+			<label for="one">输入账号:</label>
+			<input type="text" id="one"/> <br />
+			<label for="two">留言板:</label><br />
+			<textarea  id="two" cols="30" rows="10"></textarea><br />
+			<select>
+				<option>请输入您的籍贯</option>
+				<option selected="selected">北京</option>
+				<option>上海</option>
+				<option>天津</option>
+			</select> <br />
+			<input type="text" value="输入明星" list="star">
+			<datalist id="star">
+				<option>赵丽颖</option>
+				<option>肖战</option>
+				<option>王一博</option>
+				<option>白敬亭</option>
+			</datalist> <br />
+			<input type="text" placeholder="请输入您的用户名" required accesskey="a">
+		</fieldset>
+	</form>
+	
+</body>
+</html>
